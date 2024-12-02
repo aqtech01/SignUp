@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="signup" novalidate>
+      <label for="fullname">Full Name:</label>
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        placeholder="Enter Your Name"
+      />
+      <span class="error" id="fullnameError"></span>
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your Email"
+      />
+      <span class="error" id="emailError"></span>
+      <br /><br />
+
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter your username"
+      />
+      <span class="error" id="usernameError"></span>
+      <br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password" />
+      <span class="error" id="passwordError"></span>
+      <br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" id="dob" />
+      <span class="error" id="dobError"></span>
+      <br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" id="male" /> Male
+      <input type="radio" name="gender" value="Female" id="female" /> Female
+      <span class="error" id="genderError"></span>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
